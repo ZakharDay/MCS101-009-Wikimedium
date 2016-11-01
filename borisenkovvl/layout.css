@@ -1,0 +1,23 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+body > * {
+  width: 700px;
+  margin: 0 auto;
+}
+
+
+h1,h2,h3,
+h1 +p {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+}
+h1 {
+  margin-top: 69px;
+  font-size: 40px;
+}
+
+h1 + p {
+  font-family: 'PT Sans Caption', sans-serif;
+}
