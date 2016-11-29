@@ -4,11 +4,22 @@ body.landing.bg {
   background-position: top center;
 }
 
+.compact {
+  display: none;
+}
+
 .landingWrapper {
   position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 1440px;
   margin: 0 auto;
@@ -16,68 +27,68 @@ body.landing.bg {
   background: white;
 }
 
-.mainWrapper {
+.mainSection {
   position: relative;
   overflow: hidden;
   width: 1440px;
   height: 800px;
 }
 
-.mainWrapper.center {
+.mainSection.center {
   text-align: center;
   background-color: #FCFCFC;
 }
 
-.mainWrapper h2 {
+.mainSection h2 {
   font-size: 36px;
   font-weight: normal;
   line-height: 46px;
 }
 
-.mainWrapper.center h2 {
+.mainSection.center h2 {
   font-size: 40px;
   line-height: 52px;
 }
 
-.mainWrapper p {
+.mainSection p {
   margin-top: 21px;
   font-size: 26px;
   line-height: 38px;
 }
 
-.mainWrapper.center p {
+.mainSection.center p {
   margin-top: 27px;
 }
 
-.mainWrapper section {
+.mainSection section {
   position: absolute;
   top: 147px;
   width: 580px;
 }
 
-.mainWrapper.left section {
+.mainSection.left section {
   left: 160px;
 }
 
-.mainWrapper.right section {
+.mainSection.right section {
   right: 160px;
 }
 
-.mainWrapper.center section {
+.mainSection.center section {
   width: 100%;
 }
 
-.mainWrapper.center section nav {
+.mainSection.center section nav {
   margin-top: 70px;
   font-size: 0;
 }
 
-.mainWrapper.center section .btn {
+.mainSection.center section .btn {
   display: inline-block;
   margin: 0 10px;
 }
 
-.mainWrapper section figure {
+.mainSection section figure {
   width: 210px;
   height: 20px;
   margin-top: 100px;
@@ -85,15 +96,15 @@ body.landing.bg {
   background-size: cover;
 }
 
-.mainWrapper.left section figure {
+.mainSection.left section figure {
   margin-left: -40px;
 }
 
-.mainWrapper.right section figure {
+.mainSection.right section figure {
   margin-left: 410px;
 }
 
-.mainWrapper.center footer {
+.mainSection.center footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -101,7 +112,7 @@ body.landing.bg {
   padding-bottom: 35px;
 }
 
-.mainWrapper.center footer p {
+.mainSection.center footer p {
   margin-bottom: 6px;
   font-size: 16px;
 }
@@ -152,63 +163,63 @@ body.landing.bg {
     width: 100%;
   }
 
-  .mainWrapper {
+  .mainSection {
     width: 1180px;
     height: 568px;
   }
 
-  .mainWrapper h2 {
+  .mainSection h2 {
     font-size: 26px;
     line-height: 32px;
   }
 
-  .mainWrapper.center h2 {
+  .mainSection.center h2 {
     font-size: 28px;
     line-height: 37px;
   }
 
-  .mainWrapper p {
+  .mainSection p {
     margin-top: 18px;
     font-size: 19px;
     line-height: 27px;
   }
 
-  .mainWrapper.center p {
+  .mainSection.center p {
     margin-top: 21px;
   }
 
-  .mainWrapper section {
+  .mainSection section {
     top: 105px;
     width: 430px;
   }
 
-  .mainWrapper.left section {
+  .mainSection.left section {
     left: 190px;
   }
 
-  .mainWrapper.right section {
+  .mainSection.right section {
     right: 190px;
   }
 
-  .mainWrapper.center section nav {
+  .mainSection.center section nav {
     margin-top: 50px;
   }
 
-  .mainWrapper.center section .btn {
+  .mainSection.center section .btn {
     margin: 0 6px;
   }
 
-  .mainWrapper section figure {
+  .mainSection section figure {
     width: 147px;
     height: 14px;
     margin-top: 100px;
   }
 
-  .mainWrapper.left section figure {
+  .mainSection.left section figure {
     margin-left: -40px;
   }
 
-  .mainWrapper.right section figure {
+  .mainSection.right section figure {
     margin-left: 323px;
   }
 
@@ -231,5 +242,117 @@ body.landing.bg {
     right: -444px;
     width: 960px;
     height: 555px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  body.landing.bg {
+    background-image: url(../images/index_mockup_ipad_portrait.png);
+  }
+
+  .full {
+    display: none;
+  }
+
+  .compact {
+    display: block;
+  }
+
+  .mainSection {
+    width: 910px;
+    height: 1024px;
+  }
+
+  .mainSection h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .mainSection p {
+    margin-top: 21px;
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  .mainSection.center h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .mainSection.center p {
+    margin-top: 35px;
+  }
+
+  .mainSection section {
+    top: 90px;
+    width: 580px;
+  }
+
+  .mainSection.left section,
+  .mainSection.right section {
+    left: 165px;
+  }
+
+  .mainSection.center section {
+    top: 260px;
+  }
+
+  .mainSection section figure {
+    width: 210px;
+    height: 20px;
+    margin-top: 50px;
+  }
+
+  .mainSection.left section figure,
+  .mainSection.right section figure {
+    margin-left: -60px;
+  }
+
+  .mainSection:nth-child(3) section figure {
+    margin-left: 430px;
+  }
+
+  .mainSection.center section nav {
+    margin-top: 130px;
+  }
+
+  .mainSection.center section nav a {
+    margin: 0 10px;
+  }
+
+  #mockup1 {
+    top: 375px;
+    right: -34px;
+    width: 621px;
+    height: 560px;
+  }
+
+  #mockup2 {
+    top: 415px;
+    left: 333px;
+    width: 464px;
+    height: 584px;
+  }
+
+  #mockup3 {
+    top: auto;
+    bottom: 0;
+    right: -30px;
+    width: 836px;
+    height: 483px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #mockup1 {
+    background-image: url(../images/landing/landing-mockup-1@2x.jpg);
+  }
+
+  #mockup2 {
+    background-image: url(../images/landing/landing-mockup-2@2x.jpg);
+  }
+
+  #mockup3 {
+    background-image: url(../images/landing/landing-mockup-3@2x.jpg);
   }
 }

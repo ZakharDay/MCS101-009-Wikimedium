@@ -14,6 +14,7 @@
 .green {
   border-color: #00C000;
   background-color: #64f364;
+  background-image: -webkit-linear-gradient(top, #64f364 0%,#2bd42b 7%,#01a401 95%,#006900 100%);
   background-image: linear-gradient(to bottom, #64f364 0%,#2bd42b 7%,#01a401 95%,#006900 100%);
   color: white;
 }
@@ -34,7 +35,7 @@
   font-size: 17px;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1180px) and (min-width: 911px) {
   .small {
     width: 180px;
     height: 30px;
