@@ -71,11 +71,15 @@ p + ul {
   margin-top: 29px;
 }
 
+/*ul {
+  margin: 29px 0;
+}*/
+
 li {
-  margin: 17px 0 0 30px;
+  margin: 17px 0 17px 30px;
 }
 
 a {
-  color: inherit;
+  color: inherit; // наследуется цвет параграфа
   text-decoration: underline;
 }

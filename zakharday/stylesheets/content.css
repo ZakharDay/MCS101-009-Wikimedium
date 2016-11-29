@@ -1,0 +1,116 @@
+article > * {
+  width: 700px;
+  margin: 0 auto;
+}
+
+article h1 {
+  margin-top: 66px;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+article h1 + p {
+  margin-top: 14px;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: rgba(0,0,0,.4);
+}
+
+article h1 + p + p {
+  margin-top: 30px;
+}
+
+article h2 {
+  margin-top: 43px;
+  font-size: 32px;
+  line-height: 36px;
+  color: rgba(0,0,0,.8);
+}
+
+article h2 + p,
+article h2 + blockquote {
+  margin-top: 7px;
+}
+
+article h3 {
+  margin-top: 36px;
+  font-size: 28px;
+  line-height: 34px;
+  color: rgba(0,0,0,.8);
+}
+
+article h3 + p,
+article h3 + blockquote {
+  margin-top: 6px;
+}
+
+article p,
+article li,
+article blockquote {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+  color: rgba(0,0,0,.8);
+}
+
+article blockquote {
+  position: relative;
+  font-style: italic;
+}
+
+article blockquote::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  display: block;
+  width: 3px;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+}
+
+article p + p,
+article p + blockquote,
+article blockquote + blockquote,
+article blockquote + p,
+article ul + p,
+article p + ul {
+  margin-top: 29px;
+}
+
+article ul {
+  list-style-type: disc;
+}
+
+article li {
+  margin: 17px 0 0 30px;
+}
+
+article a {
+  text-decoration: underline;
+}
+
+article img {
+  display: block;
+  width: 1020px;
+  min-width: 768px;
+  margin: 80px auto;
+}
+
+article img + h2 {
+  margin-top: -1px;
+}
+
+article img + p,
+article img + blockquote,
+article img + ul {
+  margin-top: -3px;
+}
+
+article h2 + img {
+  margin-top: 82px;
+}
+
+article h3 + img {
+  margin-top: 81px;
+}

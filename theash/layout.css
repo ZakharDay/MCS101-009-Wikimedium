@@ -1,0 +1,9 @@
+h1 {
+font-size: 60px;
+color: white;
+background-color: blue;
+ }
+
+ h1 + p {
+   color: red;
+ }
